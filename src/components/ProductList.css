@@ -1,0 +1,307 @@
+.product-list {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.list-container {
+  /* display: flex;
+  align-items: center; */
+}
+
+.product-bar {
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #ffffff;
+  width: 25%;
+}
+.product-search-bar {
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #ffffff;
+  border: 1px solid #00000012;
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  width: 215px;
+}
+
+.product-Title {
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #00000080;
+  padding: 5px;
+  margin-bottom: 0px;
+}
+
+.product-number {
+  font-size: 18px;
+  margin-right: 10px;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.bullet-img {
+  margin-right: 10px;
+}
+
+.edit-button {
+  width: 15.98px !important;
+  height: 16px !important;
+  color: #00000033 !important;
+  border: none !important;
+}
+
+.product-variant-list {
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #ffffff;
+  border: 1px solid #00000012;
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  border: 1px solid #00000012;
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  width: 184px;
+  top: 284px;
+  left: 375px;
+  gap: 0px;
+  border-radius: 30px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+user agent stylesheet li {
+  display: list-item;
+}
+
+.product-variant-container {
+  display: flex;
+  border: none;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.variant-detail-p {
+  margin-bottom: 0px !important;
+}
+
+.add-discount-button {
+  margin-left: "10px";
+  width: 141px;
+  height: 32px;
+  border-radius: 4px 0px 0px 0px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  font-family: SF Pro Text !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  background: #008060 !important;
+  color: white !important;
+  text-transform: none !important;
+  margin-left: 10px !important;
+}
+
+.product-variant-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.discount-inputs {
+  margin-left: 10px;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.discount-select,
+.discount-input {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.add-discount-btn {
+  margin-top: 5px;
+}
+
+.variant-details {
+  flex: 1;
+}
+
+.discount-input {
+  width: 69px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #ffffff;
+  border: 1px solid #00000012;
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  display: block;
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.discount-input-main {
+  width: 69px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #ffffff;
+  border: 1px solid #00000012;
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  display: block;
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+}
+
+.discount-select {
+  width: 95px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #ffffff;
+  border: 1px solid #00000012;
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  display: block;
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  border-radius: 30px;
+  color: #000000cc !important;
+}
+
+.discount-select-main {
+  width: 95px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #ffffff;
+  border: 1px solid #00000012;
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  display: block;
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #000000cc !important;
+}
+
+.text {
+  font-family: SF Pro Text !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
+  text-align: left !important;
+  text-underline-position: from-font !important;
+  text-decoration-skip-ink: none !important;
+  color: #000000cc !important;
+}
+
+.bullet-img-variant {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.show-variants-button {
+  background-color: transparent !important;
+  color: #007bff !important;
+  text-transform: none !important;
+  padding: 0 !important;
+  border: none !important;
+  font-weight: normal !important;
+  cursor: pointer !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-family: SF Pro Text !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
+  text-decoration-line: underline !important;
+  text-decoration-style: solid !important;
+  margin-left: 325px !important;
+}
+
+.show-variants-button .MuiButton-endIcon {
+  margin-left: 0 !important;
+  margin-bottom: 3px !important;
+}
+
+.show-variants-button :hover {
+  background-color: transparent !important;
+  text-decoration: underline !important;
+}
+
+.delete-button {
+  width: 11.67px !important;
+  height: 11.67px !important;
+
+/* Fully transparent */
+  color: #00000066 !important; /* Semi-transparent black */
+  border: none !important;
+  padding: 0 !important;
+  display: flex !important; /* To center any potential icon or content */
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+
+}
+
+.delete-button:hover {
+  opacity: 1 !important; /* Makes button visible on hover */
+}
+
+.line-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 431.06px;
+  border: 1px solid #0000001A
+}
+
+.product-list-field{
+  display: flex;
+  align-items: center;
+}
+
