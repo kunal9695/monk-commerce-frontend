@@ -24,21 +24,21 @@ const productSlice = createSlice({
   reducers: {
     updateProduct: (state, action) => {
       const { index, product } = action.payload;
-      state.items[index] = product; // Update the product at the specific index
+      state.items[index] = product; 
     },
   },
   extraReducers: (builder) => {
     builder
       .addCase(fetchProducts.pending, (state) => {
-        state.status = 'loading'; // Update status to loading while fetching data
+        state.status = 'loading'; 
       })
       .addCase(fetchProducts.fulfilled, (state, action) => {
-        state.status = 'succeeded'; // Update status to succeeded once data is fetched
-        state.items = action.payload; // Store the fetched data in the items array
+        state.status = 'succeeded'; 
+        state.items = action.payload; 
       })
       .addCase(fetchProducts.rejected, (state, action) => {
-        state.status = 'failed'; // Set status to failed in case of an error
-        state.error = action.error.message; // Store error message
+        state.status = 'failed'; 
+        state.error = action.error.message; 
       });
   },
 });
