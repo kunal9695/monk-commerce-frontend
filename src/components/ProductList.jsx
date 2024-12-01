@@ -24,65 +24,28 @@ const ProductList = ({
       setDraggedProducts(products)
   },[products])
 
-  // Initialize dragula for the list container
+ 
   useEffect(() => {
     console.log('drag')
-    const container = document.querySelector('.product-list'); // Get the product list container
-    const drake = Dragula([container]); // Enable drag-and-drop on the container
-
-    // Handle the item drop and update the order
+    const container = document.querySelector('.product-list'); 
+    const drake = Dragula([container]);
+   
     drake.on('drop', (el, target, source, sibling) => {
       const newOrder = [...draggedProducts];
-      const draggedIndex = newOrder.findIndex((product) => product.id === el.dataset.id); // Get the index of the dragged product
+      const draggedIndex = newOrder.findIndex((product) => product.id === el.dataset.id); 
       const targetIndex = newOrder.findIndex((product) => product.id === sibling?.dataset?.id || target.dataset.id);
 
       if (draggedIndex !== -1 && targetIndex !== -1) {
-        // Reorder the products based on the dragged index and target index
+     
         const [draggedItem] = newOrder.splice(draggedIndex, 1);
         newOrder.splice(targetIndex, 0, draggedItem);
       }
-      setDraggedProducts(newOrder); // Update the state with the new order
+      setDraggedProducts(newOrder); 
     });
-
-
-
     return () => {
-      drake.destroy(); // Cleanup dragula when the component unmounts
+      drake.destroy(); 
     };
   }, [draggedProducts,products]);
-
-
-  // useEffect(() => {
-  //   const container = document.querySelector(".product-list");
-  //   const drake = Dragula([container]);
-  
-  //   drake.on("drop", (el, target, source, sibling) => {
-  //     const updatedOrder = [...draggedProducts];
-  
-  //     const draggedId = el.dataset.id;
-  //     const siblingId = sibling?.dataset?.id;
-  
-  //     // Find indexes of the dragged item and its new position
-  //     const draggedIndex = updatedOrder.findIndex(
-  //       (product) => product.id === draggedId
-  //     );
-  //     const siblingIndex = siblingId
-  //       ? updatedOrder.findIndex((product) => product.id === siblingId)
-  //       : updatedOrder.length; // If no sibling, move to the end
-  
-  //     if (draggedIndex !== -1) {
-  //       const [draggedItem] = updatedOrder.splice(draggedIndex, 1); // Remove the dragged item
-  //       updatedOrder.splice(siblingIndex, 0, draggedItem); // Insert at new index
-  //     }
-  
-  //     setDraggedProducts(updatedOrder);
-  //   });
-  
-  //   return () => {
-  //     drake.destroy(); // Cleanup Dragula on component unmount
-  //   };
-  // }, [draggedProducts]);
-  
 
   const handleShowVariantsToggle = (productId) => {
     setIsVariantsVisible((prevState) => ({
